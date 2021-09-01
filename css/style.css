@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Regular.ttf");
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comfortaa';
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+font-family: 'Montserrat';
+}
+
+bold{
+    font-weight: bold;
+}
+h1{
+   font-size: 44px; 
+}
+
+
+/*Header*/
+.header{
+    height: 70px;
+    background: #FFDE43
+}
+.header_title{
+    font-size: 10px;
+    align-items: center;
+    display: flex;
+}
+.header_title img{
+    width: 73px;
+    margin-left: 5px;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.header_menu{
+    float: left;
+    display: block;
+}
+.header_menu_item{
+    float: left;
+    list-style: none;
+    margin: 0px 8px;
+}
+.header_menu_link{
+    text-decoration: none;
+    color: black;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+}
+.fa-phone{
+    transform: rotate(88deg);
+}
+.fa-phone ,.fa-envelope{
+    margin-right: 5px;
+}
+.header_nav button{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+/*Flotante*/
+.flotante_todo{
+    position: fixed; 
+    bottom: 13%; 
+    margin-left: 80px;
+    z-index: 5;
+}
+.flotante{margin: 15px 0px; 
+    border-radius: 50%;} 
+#flotante_1{background: #00bb2d;
+    width: 65px; 
+    height: 65px;} 
+#flotante_1 img{width: 85%
+    ;display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 8px;} 
+#flotante_3{display: none;}
+
+
+/*Primera seccion*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.formulario{
+    display: inline-grid;
+    font-size: 14px;
+background-color: white;
+border-radius: 40px;
+padding: 25px;
+}    
+.formulario h2{
+    color: #F29705;
+    font-family: 'Montserrat';
+    font-size: 30px ;
+}  
+    .cotizadorboton{
+        background-color: #F29705 !important;
+        border-radius: 20px;
+        width: 50%;
+        margin: auto;
+        margin-top: 15px;
+    }
+   .primsec_agendar, .formulario input, textarea{
+        background-color: #E8E8E8;
+        border: 0px;
+        height: 45px;
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+    .formulario input:focus{
+        background-color: #E8E8E8;
+    }
+      .formulario textarea:focus{
+        background-color: #E8E8E8;
+    }
+.checkss{
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+}
+input{
+    cursor:  pointer;
+}
+.primsec_agendar{
+        background-color: transparent !important;
+        border:  solid 2px white;
+        color:  white;
+        padding: 17px 0px 17px 0px;
+        width: 40%;
+        text-align: center;}
+
+
+/*Segunda seccion*/
+.section2{
+    margin-top: 40px;
+    padding: 20px;
+}
+.section2_container{
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: auto;
+}
+.section2_title2{
+    display: none;
+}
+.section2_sub{
+    width: 49%;
+}
+.section2_img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.section2_subcontainer{
+    padding: 25px;
+   
+}
+.section2_title1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.section2_title1:after{
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: red;
+    display: block;
+    margin-top: 18px
+    
+}
+.section2_subcontainer p{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: "Comfortaa";
+}
+    
+@media screen and (max-width: 500px){
+
+    /*Header*/
+    .header_menu{
+        display: none;
+    }
+
+
+    /*Flotante*/
+    .flotante_todo{position: fixed;
+        bottom: 1%; 
+        right: 5%;}
+    #flotante_3{display: block; 
+        background: #848484;
+        width: 65px; 
+        height: 65px;}
+    #flotante_3 img{width: 70%;
+        display: block; 
+        margin-right: auto;
+        margin-left: auto; 
+        padding-top: 13px;}
+        
+
+    /*1era seccion*/
+        .formulario h2{
+            font-size: 20px ;
+        }
+        .cotizadorboton{
+            font-size: 12px;
+            width: 80%;
+        } 
+        
+
+    /*Segunda seccion*/
+    .section2_title2{
+        display: block;
+    }
+    .section2_title1{
+        display: none;
+    }
+    .section2_container{
+        text-align: center;
+        
+    }
+    .section2_sub{
+        width: 100%;
+    }
+    .section2_title2:after{
+        content: "";
+        height: 3px;
+        width: 50px;
+        background: red;
+        display: block;
+        margin-top: 18px;
+        text-align: center;
+        left: 42%;
+        position: absolute;
+    }
+    .section2_subimg{
+        margin-top: 50px;
+    }
+
+} 
