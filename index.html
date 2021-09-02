@@ -6,30 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"  href="http://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript" src="../Leasein/js/slide.js"></script>
     <title>Leasing de laptops</title>
 </head>
 <body>
-    <style>
-        .primsec_i, .primsec_d{
-       width: 50%;
-        }
-       
-        .primerasec{
-           display: flex;
-           background-image: url(../Leasein/images/foto_franco.jpg);
-           background-size: cover;
-           background-position: center;
-           background-repeat: no-repeat;
-           padding: 0px;
-           margin: 0px;
-       
-        }
-    </style>
     <header class="header">
         <div class="header_container">
-            <h2 class="header_title">Con el respaldo de 
+            <p class="header_title">Con el respaldo de 
                 <img src="images/leasein-black.png" alt="">
-            </h2>
+            </p>
             <nav class="header_nav">
                 <ul class="header_menu">
                     <li class="header_menu_item"><a href="" class="header_menu_link"><i class="fas fa-phone"></i>946 566 494</a></li>
@@ -55,11 +40,11 @@
         <div class=primsec_i>
             <h1>Leasing operativo de laptops y computadoras</h1>
             <p>Cuenta con las laptops y computadoras que necesitas <bold>sin cuota inicial</bold></p>
-            <input class="primsec_agendar cotizadorboton" value="Agenda una reunión">
+            <button style="background-color: transparent !important;" class="primsec_agendar btn_gen" >Agenda una reunión</button>
         </div>
         <div class=primsec_d>
             <form  action="https://alquilerdelaptops.pe/programacion/php/cotizador.php" method="post"  class="formulario">
-                <h2  class="hdocito">Déjanos tu solicitud</h2>
+                <h2  class="hdocito">Solicita un Leasing</h2>
             <label>Nombre y apellidos</label>
             <input name="nombreCotizacion" type="text" required> 
                         <label>Correo corporativo</label>			    
@@ -68,15 +53,19 @@
             <input name="rucCotizacion" type="number"  min="19999999999"  max="29999999999" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Ingresa un RUC valido');" required>
             <label>Celular</label>	
             <input name="celularCotizacion" type="number"  min="888888889" max="999999999" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Ingresa un número valido');" required>
-
+            
             <label>Cuéntanos qué necesitas</label>
             <textarea name="textareaform" style="resize:none; font-size:10px;" placeholder="Ejemplo: Cantidad de laptops, plazo, marca, especificaciones de hardware y software, etc." required></textarea> 
+            
+            
             <p style="font-size: 10px;  line-height: 100%;  text-align:left;">Horario de atención: L-V 9:00am - 7:00pm y S 9:00am - 12:00pm</p>	
             <div class="checkss">
+                
             <input type="checkbox"  id="terminosycondi"  style="margin:0px; margin-right:10px;"  required oninvalid="this.setCustomValidity('Selecciona esta opción si deseas continuar.')" onchange="this.setCustomValidity('')" >
             <label for="terminosycondi" >Acepto la<a  href="https://alquilerdelaptops.pe/politica-de-proteccion-de-datos/" style="color:  #F29705;" target="_blank"> Política de Protección de Datos</a> y el tratamiento de mis datos para fines de contacto comercial.</label>
             </div>
-            <input  name="validarCotizacion" type="submit"  class="cotizadorboton" value="Solicita un alquiler">
+            
+            <input  name="validarCotizacion" type="submit"  style="margin: auto; margin-top: 15px;" class="btn_gen" value="Quiero un leasing">
             </form>
         </div>
     </section>
@@ -95,5 +84,149 @@
             </div>
         </div>
     </section>
+    <section class="section3">
+        <div class="tersec">
+            <h2 class="tersec_h2">Beneficios del leasing operativo de laptops y computadoras</h2>
+            <hr class="tersec_hr">
+            <div class="tersec_divpadre">
+                <div class="tersec_divhijo"><img src="../Leasein/images/calendario-tiempo.png"><p class="tersec_p">Evitas los préstamos</p> <p>No necesitas un gran capital para contar con las laptops y computadoras que necesitas.</p></div>
+                <div class="tersec_divhijo"><img src="../Leasein/images/calendario-tiempo.png"><p class="tersec_p">Proteges tu rentabilidad</p> <p>Evitas invertir en activos que se pueden devaluar rápidamente.</p></div>
+                <div  class="tersec_divhijo"><img src="../Leasein/images/calendario-tiempo.png"><p class="tersec_p">Sin cuota inicial</p> <p>No necesitas desembolsar ningún monto inicial para acceder a este servicio.</p></div>
+            </div>
+            <div class="tersec_divpadre">
+                <div class="tersec_divhijo"><img src="../Leasein/images/calendario-tiempo.png"><p class="tersec_p">Nunca dejas de estar operativo</p> <p>Cuentas con garantía durante el periodo de contrato y puedes optar por nuestro servicio técnico.</p></div>
+                <div class="tersec_divhijo"><img src="../Leasein/images/calendario-tiempo.png"><p class="tersec_p">Cuentas con otros productos de distintas marcas</p> <p>Puedes añadir impresoras, softwares u otros a solicitud (tablets, servidores, monitores, entre otros).</p></div>
+                <div  class="tersec_divhijo"><img src="../Leasein/images/calendario-tiempo.png"><p class="tersec_p">Precio más bajo</p> <p>Al escoger el leasing operativo podrás acceder a un mejor precio.</p></div>
+            </div>
+            <button  name="validarCotizacion" style="margin-top: 20px;"  class="btn_gen">Quiero un leasing</button>
+        </div>
+        <div class="tersec" style="display: none;">
+            <div class="container-slider">
+                <div class="slider" id="slider">
+                    <div class="slider__section">holi
+                    </div>
+                     <div class="slider__section">holi2
+                    </div>
+                     <div class="slider__section">holi3
+                    </div>
+                     <div class="slider__section">holi4
+                    </div>
+                </div>
+            <div class="slider__btn slider__btn--right" id="slide_d">&#60;</div>
+            <div class="slider__btn slider__btn--left" id="slide_i">&#62;</div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <h2>Diferencias entre leasing operativo y leasing financiero</h2>
+        <div class="section4_container1">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th><th class="section4_colum_2">Leasing operativo</th><th class="section4_colum_3">Leasing financiero</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Se solicita cuota inicial</td><td class="section4_colum_2">No</td><td class="section4_colum_3">Sí</td>
+                </tr>
+                <tr>
+                    <td>Registra deuda en el <br> sistema financiero</td><td class="section4_colum_2">No</td><td class="section4_colum_3">Sí</td>
+                </tr>
+                <tr>
+                    <td>Al final del contrato</td><td class="section4_colum_2">Puedes devolver y cambiar el <br> activo por uno más moderno</td><td class="section4_colum_3">Te quedas con el activo</td>
+                </tr>
+                <tr>
+                    <td>Equipos</td><td class="section4_colum_2">Estreno</td><td class="section4_colum_3">Estreno</td>
+                </tr>
+                <tr>
+                    <td>Servicio técnico</td><td class="section4_colum_2">Sí</td><td class="section4_colum_3">No</td>
+                </tr>
+                <tr>
+                    <td>Reemplazo en caso de fallas</td><td class="section4_colum_2">Sí</td><td class="section4_colum_3">No</td>
+                </tr>
+                <tr>
+                    <td>Costo mensual</td><td class="section4_colum_2">Bajo</td><td class="section4_colum_3">Bajo</td>
+                </tr>
+                <tr>
+                    <td>Flexibilidad de contrato</td><td class="section4_colum_2">Amplia</td><td class="section4_colum_3">Ninguna</td>
+                </tr>
+                <tr>
+                    <td>Plazo mínimo</td><td class="section4_colum_2">1 año</td><td class="section4_colum_3">2 años</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section4_container2">
+            <div class="section4_mov section4_mov_encab">
+                <h3>Leasing <br> operativo</h3>
+                <h3>Leasing <br> financiero</h3>
+            </div>
+            <div class="section4_mov">
+                <h4>EQUIPOS</h4>
+                <div class="section4_mov_d">
+                    <div class="section4_mov_d_d section4_mov_d_d1">Estreno</div>
+                    <div class="section4_mov_d_d section4_mov_d_d2">Estreno</div>
+                </div>
+            </div>
+            <div class="section4_mov">
+                <h4>SERVICIO TECNICO</h4>
+                <div class="section4_mov_d">
+                    <div class="section4_mov_d_d section4_mov_d_d1">No</div>
+                    <div class="section4_mov_d_d section4_mov_d_d2">Sí</div>
+                </div>
+            </div>
+            <div class="section4_mov">
+                <h4>REEMPLAZO EN CASO DE FALLA</h4>
+                <div class="section4_mov_d">
+                    <div class="section4_mov_d_d section4_mov_d_d1">No</div>
+                    <div class="section4_mov_d_d section4_mov_d_d2">Sí</div>
+                </div>
+            </div>
+            <div class="section4_mov">
+                <h4>COSTO MENSUAL</h4>
+                <div class="section4_mov_d">
+                    <div class="section4_mov_d_d section4_mov_d_d1">Bajo</div>
+                    <div class="section4_mov_d_d section4_mov_d_d2">Medio(Incluye servicio técnico)</div>
+                </div>
+            </div>
+            <div class="section4_mov">
+                <h4>FLEXIBILIDAD DE CONTRATO</h4>
+                <div class="section4_mov_d">
+                    <div class="section4_mov_d_d section4_mov_d_d1">Ninguna</div>
+                    <div class="section4_mov_d_d section4_mov_d_d2">Amplia</div>
+                </div>
+            </div>
+            <div class="section4_mov">
+                <h4>PLAZO MÍNIMO</h4>
+                <div class="section4_mov_d">
+                    <div class="section4_mov_d_d section4_mov_d_d1">2 años</div>
+                    <div class="section4_mov_d_d section4_mov_d_d2">1 año</div>
+                </div>
+            </div>
+            <div class="section4_mov">
+                <h4>CANTIDAD MÍNIMA DE EQUIPOS</h4>
+                <div class="section4_mov_d">
+                    <div class="section4_mov_d_d section4_mov_d_d1">A partir de $10,000</div>
+                    <div class="section4_mov_d_d section4_mov_d_d2">Ninguna</div>
+                </div>
+            </div>
+        </div>
+        <a href=""><button>Quiero un leasing</button></a>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_container_sec">
+                <p class="footer_sec_title">Con el respaldo de
+                    <img src="images/leasein-black.png" alt="">
+                </p>
+                <div class="footer_nav_social">
+                    <a href="" class="footer_soc_items"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" class="footer_soc_items"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="footer_soc_items"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="footer_soc_items"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <p class="footer_derechos">Leasein 2020 Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>

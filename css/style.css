@@ -1,3 +1,4 @@
+/*Generales*/
 @font-face {
   font-family: "Comfortaa";
   src: url("../fonts/Comfortaa-Regular.ttf");
@@ -17,28 +18,54 @@
 h1, h2, h3{
 font-family: 'Montserrat';
 }
-
 bold{
     font-weight: bold;
 }
 h1{
    font-size: 44px; 
 }
+h2{
+    font-size: 34px; 
+    }    
+input{
+    cursor:  pointer;
+    }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+    margin: 0; 
+    }
+.btn_gen{
+       height: 35px; 
+       font-family: 'Comfortaa';
+       background-color: #F29705 !important;
+       width: 200px;
+       border: none;
+       cursor: pointer;
+       border-radius: 25px;
+    }
 
 
 /*Header*/
 .header{
     height: 70px;
-    background: #FFDE43
+    background: #272727;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top:0;
 }
 .header_title{
-    font-size: 10px;
+    font-size: 13px;
     align-items: center;
     display: flex;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 .header_title img{
     width: 73px;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 .header_container{
     display: flex;
@@ -50,6 +77,7 @@ h1{
 .header_menu{
     float: left;
     display: block;
+    
 }
 .header_menu_item{
     float: left;
@@ -58,7 +86,7 @@ h1{
 }
 .header_menu_link{
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
 }
 .header_nav{
     display: flex;
@@ -72,7 +100,10 @@ h1{
 }
 .header_nav button{
     border-radius: 20px;
-    padding: 5px;
+    border-style: none;
+    padding: 10px;
+    background: #F29705;
+    color: #000000;
 }
 
 
@@ -97,66 +128,68 @@ h1{
 
 
 /*Primera seccion*/
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
+.primerasec{
+    display: flex;
+    background-image: url(../images/foto_franco.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4% 6% 0% 6%;
+    height: 100%;
+    margin-top: 70px;
+    }
+.primsec_i, .primsec_d{
+    width: 50%;
+    }
+.primsec_i{
+    margin-right: 15%;
+    }
+.primsec_agendar{
+    border:  solid 2px white !important;
+    color:  white;
+    width: 40%;
+    text-align: center;
+    }
+
+
+/* Formulario */
 .formulario{
     display: inline-grid;
     font-size: 14px;
-background-color: white;
-border-radius: 40px;
-padding: 25px;
-}    
-.formulario h2{
-    color: #F29705;
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px 35px 15px 35px;
+    } 
+    .formulario h2{
+    color: #F6BE00;
     font-family: 'Montserrat';
     font-size: 30px ;
-}  
-    .cotizadorboton{
-        background-color: #F29705 !important;
-        border-radius: 20px;
-        width: 50%;
-        margin: auto;
-        margin-top: 15px;
-    }
-   .primsec_agendar, .formulario input, textarea{
-        background-color: #E8E8E8;
-        border: 0px;
-        height: 45px;
-        font-family: 'Comfortaa';
-        font-size: 14px;
-        outline: none;
-        margin-bottom: 20px;
-    }
-    .formulario input:focus{
-        background-color: #E8E8E8;
-    }
-      .formulario textarea:focus{
-        background-color: #E8E8E8;
-    }
+    }   
+.formulario input, textarea{
+    background-color: #E8E8E8;
+    border: 0px;
+    height: 35px;
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 20px;
+    }  
+.formulario input:focus{
+    background-color: #E8E8E8;
+    }    
+.formulario textarea:focus{
+    background-color: #E8E8E8;
+    }  
 .checkss{
     display: flex;
     font-size: 10px;
     align-items: center;
-}
-input{
-    cursor:  pointer;
-}
-.primsec_agendar{
-        background-color: transparent !important;
-        border:  solid 2px white;
-        color:  white;
-        padding: 17px 0px 17px 0px;
-        width: 40%;
-        text-align: center;}
+    }
 
 
 /*Segunda seccion*/
 .section2{
-    margin-top: 40px;
-    padding: 20px;
+    padding: 80px 20px;
 }
 .section2_container{
     max-width: 1300px;
@@ -189,7 +222,7 @@ input{
     content: "";
     height: 3px;
     width: 50px;
-    background: red;
+    background: #F29705;
     display: block;
     margin-top: 18px
     
@@ -199,8 +232,184 @@ input{
     line-height: 1.5em;
     font-family: "Comfortaa";
 }
+
+
+/* Tercera sección */
+.tersec{
+    padding: 4% 11% 4% 11%;
+    text-align: center;
+    background-color: #EFEFEF;
+    }
+.tersec_h2{
+    margin: 0px 10% 0px 10%; 
+    }
     
+.tersec_p{
+    color:  #feb600;
+    font-weight: 700;
+    }
+
+.tersec_hr{
+    width: 5%;
+    background-color: #feb600;
+    border: solid 2px #feb600;
+    margin-top: 20px;
+    }
+.tersec_divpadre{
+    display: flex;
+    }
+.tersec_divhijo{
+    padding: 50px 35px 0px 35px;
+    width: 33%;
+    }
+
+
+/* Slider */
+.slider{
+    display: flex;
+    width: 400%;
+    height: 300px;
+    margin-left:  -100%;
+    }
+.container-slider{
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    }      
+.slider__section{
+    width: 100%;
+    }    
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+.slider__btn--right{
+    rigth: 10%;
+    }
+.slider__btn--left{
+    left: 10%;
+    }
+
+
+/*Cuarta seccion*/
+
+.section4{
+    padding: 80px 20px 60px 20px;
+    text-align: center;
+}
+.section4 h2{
+    text-align: center;
+    position: relative;
+}
+.section4 h2:after{
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: #feb600;
+    display: block;
+    margin-top: 18px;
+    left: 48.5%;
+    position: absolute;
+}
+.section4_container1{
+    max-width: 1300px;
+    margin: 50px auto 0px auto;
+    
+}
+.section4_container1 table{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.section4_container1 table th,td{
+    padding: 20px;
+}
+.section4_container1 tr{
+    border-bottom: 1.8px solid #000000;
+}
+.section4_colum_2{
+    background: #FFF5C7;
+}
+.section4_colum_3{
+    background: #EFEFEF;
+}
+.section4_container2{
+    display: none;
+}
+.section4 a button{
+    margin: 30px 0px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background: #F29705;
+    color: #000000;
+    border-style: none;
+}
+
+
+/*Footer*/
+footer{
+    height: 250px;
+    background: #272727;
+    opacity: 0.9;
+}
+.footer_container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px 0px 20px;
+}
+.footer_container_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.footer_sec_title{
+    font-size: 13px;
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+}
+.footer_sec_title img{
+    width: 73px;
+    margin-left: 8px;
+}
+.footer_soc_items{
+    text-decoration: none;
+    color: #272727;
+    background: #FFFFFF;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 8px;
+    margin: 0px 3px;
+    font-size: 17px;
+}
+.footer_derechos{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 500px){
+    /* Generales */
+        h1{
+            font-size: 30px; 
+            }
+        html, body{
+        font-size: 14px;
+        }
+
 
     /*Header*/
     .header_menu{
@@ -224,14 +433,42 @@ input{
         
 
     /*1era seccion*/
+    .primerasec{
+        display: block;
+        height: auto;
+        padding: 0px;
+        background-position: 30% -20%;
+        background-size: 1000px auto;
+        }
+      
+        .primsec_i, .primsec_d{
+        width: auto;
+        }
+      
+      
+        .primsec_d{
+        background-color: #272727;
+        padding: 20px;
+        }
+      
+        .primsec_i{
+        height: 50%;
+        text-align: center;
+        margin: 0px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFFFFF80;
+        }
+    
+
+    /* Formulario */
         .formulario h2{
             font-size: 20px ;
+            text-align: center;
         }
-        .cotizadorboton{
-            font-size: 12px;
-            width: 80%;
-        } 
-        
+
 
     /*Segunda seccion*/
     .section2_title2{
@@ -251,7 +488,7 @@ input{
         content: "";
         height: 3px;
         width: 50px;
-        background: red;
+        background: #F29705;
         display: block;
         margin-top: 18px;
         text-align: center;
@@ -260,6 +497,55 @@ input{
     }
     .section2_subimg{
         margin-top: 50px;
+    }
+
+
+    /*Tercera seccion*/
+
+
+    /*Cuarta seccion*/
+    .section4_container1{
+        display: none;
+    }
+    .section4 h2:after{
+        content: "";
+        left: 42%;
+    }
+    .section4_container2{
+        display: block;
+        padding-top: 30px;
+    }
+    .section4_mov_encab{
+        display: flex;
+        justify-content: space-around;
+    }
+    .section4_mov{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .section4_mov_d{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .section4_mov_d_d{
+        width: 49%; 
+    }
+    .section4_mov_d_d1{
+        background: #EFEFEF ;
+    }
+    .section4_mov_d_d2{
+        background: #FFF5C7;
+    }
+
+
+    /*Footer*/
+    .footer_container_sec{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer_sec_title{
+        margin-bottom: 20px;
     }
 
 } 
